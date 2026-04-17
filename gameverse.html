@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVerse - Proyecto</title>
+
+    <link rel="stylesheet" href="css/styleprojects.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#projects">Proyectos</a>
+            <a href="index.html#about">Sobre mí</a>
+            <a href="index.html#services">Servicios</a>
+            <a href="index.html#contact">Contacto</a>
+        </nav>
+
+        <div class="nav-social">
+            <a href="https://www.linkedin.com/in/carlos-duran-6600993ba/"><img src="assets/img/linkedin.png"></a>
+            <a href="https://github.com/CarlosDF3?tab=overview&from=2026-04-01&to=2026-04-08"><img src="assets/img/github.png" class="github"></a>
+        </div>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero container">
+
+    <div class="hero-info">
+
+        <div class="meta">
+            Android App · Java · REST APIs
+        </div>
+
+        <h1>GameVerse</h1>
+
+        <p class="desc">
+            Aplicación Android que consume APIs externas para obtener información de videojuegos en tiempo real,
+            gestionando datos dinámicos y renderizado de UI basado en respuestas REST.
+        </p>
+
+        <div class="stack">
+            <span>Java</span>
+            <span>Android Studio</span>
+            <span>REST API</span>
+            <span>JSON</span>
+        </div>
+
+    </div>
+
+    <div class="hero-preview">
+        <img class="hero-bg" src="assets/img/gameverse.png" alt="Vista previa de GameVerse">
+    </div>
+
+</section>
+
+<!-- ARQUITECTURA -->
+<section class="section container">
+
+    <h2>Arquitectura</h2>
+
+    <div class="grid">
+
+        <div class="box">
+            <h3>Cliente (Android)</h3>
+            <p>Responsable de UI, navegación y consumo de API.</p>
+        </div>
+
+        <div class="box">
+            <h3>API Externa</h3>
+            <p>Fuente de datos de videojuegos (RAWG / Twitch APIs).</p>
+        </div>
+
+        <div class="box">
+            <h3>Procesamiento</h3>
+            <p>Parseo JSON y adaptación de datos a modelos internos.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FUNCIONALIDAD -->
+<section class="section container">
+
+    <h2>Funcionalidad</h2>
+
+    <ul class="list">
+        <li>Búsqueda dinámica de videojuegos</li>
+        <li>Consumo de APIs REST en tiempo real</li>
+        <li>Renderizado dinámico de listas</li>
+        <li>Manejo de estados de carga y error</li>
+        <li>Interfaz responsive en Android</li>
+    </ul>
+
+</section>
+
+<!-- DEMO -->
+<section id="demo" class="section container">
+
+    <h2>Demo</h2>
+
+    <div class="demo-box">
+        <video controls class="videoverse">
+            <source src="assets/img/demo_verse.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</section>
+
+<!-- IMPLEMENTACIÓN -->
+<section class="section container">
+
+    <h2>Implementación</h2>
+
+    <p class="text">
+        El sistema está construido sobre una arquitectura cliente que consume datos de APIs externas mediante
+        peticiones HTTP. Los datos se transforman en modelos internos y se renderizan en la UI mediante componentes
+        Android.
+    </p>
+
+</section>
+
+<!-- LINKS -->
+<section class="section container">
+
+    <h2>Recursos</h2>
+
+    <div class="buttons">
+        <a href="https://github.com/CarlosDF3/Game-Verse" class="btn">Repositorio</a>
+    </div>
+
+</section>
+
+</body>
+</html>

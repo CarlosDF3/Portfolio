@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - Proyecto</title>
+
+    <link rel="stylesheet" href="css/styleprojects.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#projects">Proyectos</a>
+            <a href="index.html#about">Sobre mí</a>
+            <a href="index.html#services">Servicios</a>
+            <a href="index.html#contact">Contacto</a>
+        </nav>
+
+        <div class="nav-social">
+            <a href="https://www.linkedin.com/in/carlos-duran-6600993ba/"><img src="assets/img/linkedin.png"></a>
+            <a href="https://github.com/CarlosDF3?tab=overview&from=2026-04-01&to=2026-04-08"><img src="assets/img/github.png" class="github"></a>
+        </div>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero container">
+
+    <div class="hero-info">
+
+        <div class="meta">
+            Web App · Full-Stack · PHP · MySQL
+        </div>
+
+        <h1>Project Event</h1>
+
+        <p class="desc">
+            Project Event es una plataforma social orientada a eventos que combina lógica 
+            backend personalizada con una interfaz frontend dinámica, permitiendo la gestión 
+            completa de usuarios y eventos en tiempo real mediante una arquitectura web tradicional full-stack.
+        </p>
+
+        <div class="stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+        </div>
+
+    </div>
+
+    <div class="hero-preview">
+        <img class="hero-bg" src="assets/img/projectevent.png" alt="Vista previa de Project Event">
+    </div>
+
+</section>
+
+<!-- ARQUITECTURA -->
+<section class="section container">
+
+    <h2>Arquitectura</h2>
+
+    <div class="grid">
+
+        <div class="box">
+            <h3>Cliente (Web)</h3>
+            <p>Interfaz desarrollada en HTML, CSS y JavaScript encargada de la presentación de datos y la interacción con el usuario.</p>
+        </div>
+
+        <div class="box">
+            <h3>Backend (PHP)</h3>
+            <p>Procesa las peticiones del cliente, aplica reglas de negocio y ejecuta consultas SQL directas sobre la base de datos MySQL.
+
+            También gestiona la autenticación de usuarios y el control de sesiones.</p>
+        </div>
+
+        <div class="box">
+            <h3>Base de datos (MySQL)</h3>
+            <p>Sistema de persistencia relacional donde se almacenan usuarios, eventos y relaciones entre entidades.</p>
+        </div>
+
+        <div class="box">
+            <h3>Flujo de datos</h3>
+            <p>El sistema sigue un flujo cliente-servidor clásico:
+            El usuario interactúa desde el frontend → el servidor PHP recibe la petición → se ejecutan consultas SQL en MySQL → 
+            el backend devuelve los datos procesados al cliente → el frontend renderiza la información.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FUNCIONALIDAD -->
+<section class="section container">
+
+    <h2>Funcionalidad</h2>
+
+    <ul class="list">
+        <li>Creación de eventos por parte de usuarios</li>
+        <li>Exploración de eventos mediante filtros por intereses y categorías</li>
+        <li>Sistema de registro e inicio de sesión</li>
+        <li>Interacción con eventos (likes y guardados)</li>
+        <li>Clasificación de eventos mediante categorías</li>
+        <li>Visualización de información detallada (ubicación, descripción, condiciones)</li>
+    </ul>
+
+</section>
+
+<!-- DEMO -->
+<section id="demo" class="section container">
+
+    <h2>Demo</h2>
+
+    <div class="demo-box">
+        <video controls>
+            <source src="assets/img/demo_event.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</section>
+
+<!-- IMPLEMENTACIÓN -->
+<section class="section container">
+
+    <h2>Implementación</h2>
+
+    <p class="text">
+        El sistema se implementa mediante una arquitectura web tradicional basada en PHP y MySQL, donde la lógica de negocio se ejecuta en el servidor.
+
+        Las operaciones principales se realizan mediante consultas SQL directas, procesadas en el backend en respuesta a acciones del usuario desde el frontend.
+
+        El sistema incluye validación de datos en servidor, control de sesiones de usuario y gestión de permisos básicos para acceso a funcionalidades.
+
+        Se utiliza un endpoint específico tipo API únicamente para la obtención de eventos asociados a usuarios, optimizando la carga de datos dinámicos en esa sección concreta.
+    </p>
+
+</section>
+
+<!-- LINKS -->
+<section class="section container">
+
+    <h2>Recursos</h2>
+
+    <div class="buttons">
+        <a href="https://github.com/CarlosDF3/Project-Event" class="btn">Repositorio</a>
+    </div>
+
+</section>
+
+</body>
+</html>

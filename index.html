@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="icon" href="assets/img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-container">
+
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo">
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#hero">Inicio</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#about">Sobre mí</a>
+            <a href="#services">Servicios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+
+        <div class="nav-social">
+            <a href="https://www.linkedin.com/in/carlos-duran-6600993ba/"><img src="assets/img/linkedin.png"></a>
+            <a href="https://github.com/CarlosDF3?tab=overview&from=2026-04-01&to=2026-04-08"><img src="assets/img/github.png" class="github"></a>
+        </div>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+
+    <div class="container hero-grid">
+
+        <!-- LEFT -->
+        <div class="hero-left">
+
+            <div class="hero-meta">DESARROLLADOR WEB · DISEÑADOR GRÁFICO</div>
+
+            <h1>
+                Carlos Durán
+            </h1>
+
+            <p class="hero-subtitle">
+                Diseño y desarrollo experiencias digitales centradas en la funcionalidad y rendimiento.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">Ver proyectos</a>
+                <a href="#contact" class="btn">Contacto</a>
+            </div>
+
+        </div>
+
+        <!-- RIGHT LOGO -->
+        <div class="hero-right">
+            
+                <img src="assets/img/logo.png" alt="Logo" class="hero-logo">         
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="section-head">
+            <h2>Proyectos</h2>
+            <p>Trabajo aplicado en desarrollo web y apps multiplataforma.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <a href="gameverse.html" class="project-card">
+                <div class="project-image"></div>
+                <div class="project-tag">ANDROID</div>
+                <h3>GameVerse</h3>
+                <p>App de videojuegos con integración de APIs REST</p>
+            </a>
+
+            <a href="projectevent.html" class="project-card">
+                <div class="project-image"></div>
+                <div class="project-tag">WEB</div>
+                <h3>Project Event</h3>
+                <p>Plataforma social de eventos en tiempo real</p>
+            </a>
+
+            <div class="project-card">
+                <div class="project-image"></div>
+                <div class="project-tag">EN PROCESO</div>
+                <h3>Game App</h3>
+                <p>Proyecto interactivo en desarrollo</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section alt">
+
+    <div class="container about-grid">
+
+        <div class="about-img">
+            <img src="assets/img/foto_perfil.jpg" alt="Foto">
+        </div>
+
+        <div class="about-text">
+
+            <h2>Sobre mí</h2>
+
+            <p>
+                Soy desarrollador y diseñador enfocado en crear interfaces claras y sistemas funcionales.
+            </p>
+
+            <p>
+                Trabajo con un enfoque centrado en el usuario, cuidando cada detalle desde la idea inicial hasta su implementación.
+            </p>
+
+            <p>
+                Actualmente sigo ampliando conocimientos y desarrollando proyectos propios.
+            </p>
+
+            <ul class="skills">
+                <li>Diseño UI/UX</li>
+                <li>Desarrollo Web</li>
+                <li>Branding</li>
+                <li>Ilustración</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+
+    <div class="container">
+
+        <div class="section-head">
+            <h2>Qué hago</h2>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>Diseño UI</h3>
+                <p>Interfaces limpias, modernas y centradas en la experiencia de usuario.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Desarrollo Web</h3>
+                <p>Aplicaciones funcionales, dinámicas y bien estructuradas.</p>
+            </div>
+
+            <!--<div class="service-card">
+                <h3>APIs</h3>
+                <p>Integración y consumo de servicios REST.</p>
+            </div> -->
+
+            <div class="service-card">
+                <h3>Diseño Gráfico</h3>
+                <p>Creación de identidad visual, branding y sistemas gráficos coherentes.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Ilustración</h3>
+                <p>Elementos visuales personalizados que aportan carácter y estilo.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+
+    
+
+    <div class="container contact-grid">
+
+        <h2>Contacto</h2>
+        
+        <div class="contact-left">
+            
+            <p>Si tienes una idea o proyecto, podemos trabajarlo juntos.</p>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="title" placeholder="Asunto">
+
+            <textarea name="message" rows="5" placeholder="Mensaje"></textarea>
+
+            <button type="submit" class="btn primary">Enviar</button>
+
+        </form>
+
+    </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script/script.js"></script>
+
+</body>
+</html>
