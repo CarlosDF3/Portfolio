@@ -148,6 +148,7 @@ body {
     text-decoration: none;
     font-size: 14px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -160,6 +161,10 @@ body {
 .primary {
     background: white;
     color: black;
+}
+
+.design-btn {
+    margin-top: 20px;
 }
 
 /* RIGHT STACK */

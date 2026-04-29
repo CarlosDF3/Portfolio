@@ -106,6 +106,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+// EmailJS
+
 document.addEventListener("DOMContentLoaded", function () {
 
     // EmailJS init
@@ -133,6 +136,86 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Error al enviar el mensaje");
             console.log(error);
         });
+    });
+
+});
+
+// MODAL DESIGN
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".design-card");
+    if (!cards.length) return;
+
+    console.log("modal activo");
+
+    const modal = document.createElement("div");
+    modal.classList.add("modal");
+
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <img id="modal-img" src="" alt="">
+
+            <div class="modal-text">
+                <h2 id="modal-title"></h2>
+                <p id="modal-desc"></p>
+
+                <div class="modal-meta">
+                    <div>
+                        <span>Tipo</span>
+                        <p id="modal-type"></p>
+                    </div>
+
+                    <div>
+                        <span>Cliente</span>
+                        <p id="modal-client"></p>
+                    </div>
+
+                    <div>
+                        <span>Herramientas</span>
+                        <p id="modal-tools"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    const img = modal.querySelector("#modal-img");
+    const title = modal.querySelector("#modal-title");
+    const desc = modal.querySelector("#modal-desc");
+    const type = modal.querySelector("#modal-type");
+    const client = modal.querySelector("#modal-client");
+    const tools = modal.querySelector("#modal-tools");
+
+    function openModal(card) {
+        img.src = card.dataset.img;
+        title.textContent = card.dataset.title;
+        desc.textContent = card.dataset.desc;
+        type.textContent = card.dataset.type;
+        client.textContent = card.dataset.client;
+        tools.textContent = card.dataset.tools;
+
+        modal.classList.add("active");
+    }
+
+    function closeModal() {
+        modal.classList.remove("active");
+    }
+
+    cards.forEach(card => {
+        card.addEventListener("click", () => openModal(card));
+    });
+
+    modal.addEventListener("click", (e) => {
+        if (
+            e.target.classList.contains("modal") ||
+            e.target.classList.contains("modal-close")
+        ) {
+            closeModal();
+        }
     });
 
 });
